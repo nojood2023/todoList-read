@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="97I-ag-oSd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--مهامي-->
+        <scene sceneID="N1r-5l-ah8">
+            <objects>
+                <viewController id="OF3-RX-3jW" customClass="TodosVC" customModule="TODOList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9pw-zQ-usP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MAk-6N-CfS">
+                                <rect key="frame" x="0.0" y="220" width="393" height="632"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TodoCell" rowHeight="98" id="i7a-3I-rqa" customClass="TodoCell" customModule="TODOList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i7a-3I-rqa" id="KqD-7P-JWi">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-in-SDV" userLabel="Main Content SV">
+                                                    <rect key="frame" x="22" y="12" width="351" height="68"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ctd-mR-x6F" userLabel="Title &amp; Data SV">
+                                                            <rect key="frame" x="0.0" y="13.000000000000004" width="300" height="42.333333333333343"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حضور معسكر ios" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIw-i5-bSq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="300" id="Ugs-WQ-jwO"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023/12/26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6x-Zt-Hex">
+                                                                    <rect key="frame" x="20" y="28.999999999999996" width="260" height="13.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="b6x-Zt-Hex" secondAttribute="trailing" constant="20" id="vEM-lo-IJS"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-lH-Mjn">
+                                                            <rect key="frame" x="301" y="9" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="0dt-u1-SUY"/>
+                                                                <constraint firstAttribute="width" secondItem="Woc-lH-Mjn" secondAttribute="height" multiplier="1:1" id="Smb-Fo-8bV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="OdI-in-SDV" secondAttribute="bottom" constant="6" id="j3S-fD-R1I"/>
+                                                <constraint firstItem="OdI-in-SDV" firstAttribute="trailing" secondItem="KqD-7P-JWi" secondAttribute="trailingMargin" id="ubP-bt-nDw"/>
+                                                <constraint firstItem="OdI-in-SDV" firstAttribute="top" secondItem="KqD-7P-JWi" secondAttribute="topMargin" id="vAZ-ch-dQn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="todoCreationDateLable" destination="b6x-Zt-Hex" id="Gqa-34-IKD"/>
+                                            <outlet property="todoImageView" destination="Woc-lH-Mjn" id="sPo-xO-LUk"/>
+                                            <outlet property="todoTitleLable" destination="dIw-i5-bSq" id="6RL-ip-PR8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8fn-lG-JPh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MAk-6N-CfS" firstAttribute="trailing" secondItem="8fn-lG-JPh" secondAttribute="trailing" id="896-68-1s8"/>
+                            <constraint firstItem="MAk-6N-CfS" firstAttribute="leading" secondItem="8fn-lG-JPh" secondAttribute="leading" id="Iht-Pg-OMU"/>
+                            <constraint firstItem="MAk-6N-CfS" firstAttribute="top" secondItem="8fn-lG-JPh" secondAttribute="top" constant="117" id="W08-SY-QmA"/>
+                            <constraint firstAttribute="bottom" secondItem="MAk-6N-CfS" secondAttribute="bottom" id="xtw-3R-lYp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="مهامي" id="7om-zv-9pS"/>
+                    <connections>
+                        <outlet property="todosTableView" destination="MAk-6N-CfS" id="cmA-ei-cHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfd-63-neg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.5114503816794" y="-34.507042253521128"/>
+        </scene>
+        <!--Todo DetailsVC-->
+        <scene sceneID="bXJ-gc-mKf">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVC" id="aTH-V1-xqW" customClass="TodoDetailsVC" customModule="TODOList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GPz-wQ-fPx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="LVA-hS-wOr">
+                                <rect key="frame" x="0.0" y="118" width="393" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="nY8-m2-yW7"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrY-Zy-gil">
+                                <rect key="frame" x="0.0" y="436" width="393" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="حضور معسكر ios" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-TP-3gD">
+                                        <rect key="frame" x="23" y="27" width="362" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="HXZ-KZ-b1s"/>
+                                    <constraint firstItem="5gQ-TP-3gD" firstAttribute="top" secondItem="wrY-Zy-gil" secondAttribute="topMargin" constant="19" id="VdJ-2O-1Aq"/>
+                                    <constraint firstItem="5gQ-TP-3gD" firstAttribute="trailing" secondItem="wrY-Zy-gil" secondAttribute="trailingMargin" id="Vvf-R6-pxs"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="5gQ-TP-3gD" secondAttribute="bottom" constant="20" id="d4J-mv-y1w"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حضور معسكر برمجة تطبيقات ios في اكاديمية طويق " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9K-7k-YCC">
+                                <rect key="frame" x="39" y="546" width="338" height="57.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E5H-Ri-CfR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wrY-Zy-gil" firstAttribute="trailing" secondItem="E5H-Ri-CfR" secondAttribute="trailing" id="7sw-BC-lgs"/>
+                            <constraint firstItem="G9K-7k-YCC" firstAttribute="top" secondItem="wrY-Zy-gil" secondAttribute="bottom" constant="25" id="AMo-e1-qNH"/>
+                            <constraint firstItem="E5H-Ri-CfR" firstAttribute="trailing" secondItem="G9K-7k-YCC" secondAttribute="trailing" constant="16" id="Jvr-4S-0hG"/>
+                            <constraint firstItem="LVA-hS-wOr" firstAttribute="top" secondItem="GPz-wQ-fPx" secondAttribute="topMargin" constant="59" id="MrP-cm-8Yk"/>
+                            <constraint firstItem="G9K-7k-YCC" firstAttribute="leading" secondItem="E5H-Ri-CfR" secondAttribute="leading" constant="39" id="PL5-bQ-gR8"/>
+                            <constraint firstItem="wrY-Zy-gil" firstAttribute="top" secondItem="LVA-hS-wOr" secondAttribute="bottom" id="QBp-7O-HbD"/>
+                            <constraint firstItem="LVA-hS-wOr" firstAttribute="trailing" secondItem="E5H-Ri-CfR" secondAttribute="trailing" id="co2-i5-rVD"/>
+                            <constraint firstItem="LVA-hS-wOr" firstAttribute="leading" secondItem="E5H-Ri-CfR" secondAttribute="leading" id="iWC-be-rON"/>
+                            <constraint firstItem="wrY-Zy-gil" firstAttribute="leading" secondItem="E5H-Ri-CfR" secondAttribute="leading" id="mfC-bS-20P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailsLable" destination="G9K-7k-YCC" id="nOS-f7-F54"/>
+                        <outlet property="todoImageView" destination="LVA-hS-wOr" id="bMc-Jq-s99"/>
+                        <outlet property="todoTitleLable" destination="5gQ-TP-3gD" id="Drx-BU-RNB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyr-E5-kcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843.5114503816794" y="-20.422535211267608"/>
+        </scene>
+        <!--مهامي-->
+        <scene sceneID="8u2-YZ-Avu">
+            <objects>
+                <navigationController title="مهامي" automaticallyAdjustsScrollViewInsets="NO" id="97I-ag-oSd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fOY-1B-7bL">
+                        <rect key="frame" x="0.0" y="59" width="393" height="101.66666666666666"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OF3-RX-3jW" kind="relationship" relationship="rootViewController" id="BU5-AQ-QRF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hif-c2-hFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image-1" width="198" height="254"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
